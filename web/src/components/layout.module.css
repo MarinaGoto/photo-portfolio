@@ -2,7 +2,7 @@
 @import '../styles/custom-properties.css';
 
 .content {
-  background: var(--color-white);
+  background: var(--color-black);
   min-height: calc(100% - 73px - 120px);
 
   @media (--media-min-small) {
@@ -11,10 +11,11 @@
 }
 
 .footer {
-  border-top: 1px solid var(--color-very-light-gray);
+  background: var(--color-black);
+  color: var(--color-gray);
 
   @nest & a {
-    color: inherit;
+    color: var(--color-gray);
     text-decoration: none;
 
     @media (hover: hover) {
@@ -27,7 +28,7 @@
 
 .footerWrapper {
   box-sizing: border-box;
-  max-width: 960px;
+  max-width: var(--max-width);
   padding: 4.5em 1.5em 1.5em;
   margin: 0 auto;
 
